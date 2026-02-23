@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Regal Timepiece - Collection</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="images/icon logo tab.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #4682b4;
+            color: #ecf0f1;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #e67e22;
+        }
+        a:hover {
+            color: #d35400;
+        }
+        header {
+            background: #34495e;
+            color: #ffffff;
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: #e67e22 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            padding: 0 15px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #e67e22;
+            font-weight: bold;
+        }
+        .section {
+            padding: 40px 20px;
+            margin: 30px 0;
+            background: #34495e;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .section h3 {
+            color: #e67e22;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        .collection-grid {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .collection-item {
+            position: relative;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 400px;
+            width: 100%;
+        }
+        .collection-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+        }
+        .collection-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 4px solid #e67e22;
+        }
+        .collection-caption {
+            background: #2c3e50;
+            padding: 20px;
+            color: #ecf0f1;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .collection-link {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #2c3e50;
+            color: #ecf0f1;
+            margin-top: 40px;
+            border-top: #e67e22 3px solid;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Regal Timepiece</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection-section.html">Collection</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <section class="section">
+        <h3>Choose Your Collection</h3>
+        <p>Select from our curated collections for Men and Women, each offering timeless elegance and impeccable craftsmanship.</p>
+        <div class="collection-grid">
+            <a href="shop.html" class="collection-link" aria-label="Men's Watches Collection">
+                <div class="collection-item">
+                    <img src="images/Datejust 41 Wimbledon.avif" alt="Men's Watches Collection" />
+                    <div class="collection-caption">Men's Watches</div>
+                </div>
+            </a>
+            <a href="shop-women.html" class="collection-link" aria-label="Women's Watches Collection">
+                <div class="collection-item">
+                    <img src="images/Lady-Datejust diamond gold.avif" alt="Women's Watches Collection" />
+                    <div class="collection-caption">Women's Watches</div>
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Regal Timepiece. All rights reserved.</p>
+    <p>Email: info@regaltimepiece.com | Phone: +63 998 546 123</p>
+    <p>Follow us on <a href="#" style="color: #e67e22;">Instagram</a> and <a href="#" style="color: #e67e22;">Facebook</a></p>
+</footer>
+
+</body>
+</html>

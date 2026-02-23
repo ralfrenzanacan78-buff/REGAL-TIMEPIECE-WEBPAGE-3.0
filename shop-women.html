@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regal Timepiece - Women's Shop</title>
+   <link rel="icon" type="image/png" sizes="48x48" href="images/icon logo tab.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #4682b4; /* Dark blue-gray background */
+            color: #ecf0f1; /* Light gray text */
+            line-height: 1.6;
+        }
+
+        /* Global Styles (copied for consistency across pages) */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #e67e22;
+        }
+
+        a:hover {
+            color: #d35400;
+        }
+
+        /* Header (copied for consistency across pages) */
+        header {
+            background: #34495e;
+            color: #ffffff;
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: #e67e22 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            padding: 0 15px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        /* Shop Specific Styles */
+        .shop-header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x300/1a2a3a/ffffff?text=Our+Collection') no-repeat center center/cover; /* Shop header image */
+            color: #ffffff;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .shop-header h2 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .shop-header p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .product-listing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .product-card {
+            background: #34495e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #4a637f;
+        }
+        .product-card h3 {
+            color: #ecf0f1;
+            margin-bottom: 10px;
+            font-size: 1.6em;
+        }
+        .product-card p {
+            font-size: 1em;
+            color: #bdc3c7;
+            margin-bottom: 15px;
+        }
+        .product-card .price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #e67e22;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .product-card .button {
+            display: inline-block;
+            color: #ffffff;
+            background: #e67e22;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .product-card .button:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        /* Footer (copied for consistency across pages) */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #2c3e50;
+            color: #ecf0f1;
+            margin-top: 40px;
+            border-top: #e67e22 3px solid;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Regal Timepiece</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Men's Shop</a></li>
+                     <li><a href="shop-women.html">Women's Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="shop-header">
+        <h2>Our Exquisite Women's Collection</h2>
+        <p>Browse through our hand-picked selection of women's watches, each a masterpiece of engineering and design.</p>
+    </section>
+
+    <div class="container">
+        <div class="product-listing">
+            <!-- Product 4 -->
+            <div class="product-card" id="pocketwatch">
+                <img src="images/Everose gold lady-dayjust.avif" alt="Lady-Datejust diamond gold">
+                <h3>Lady-Datejust
+                    Oyster, 28 mm, Everose gold and diamonds 
+                    Reference <mark style="color: rgb(0, 0, 0);"> 279135RBR </mark> 
+                </h3>
+                <p>The Rolex Lady-Datejust is a classic women's timepiece, blending elegance and functionality in a smaller, refined design. Its timeless aesthetic makes it a versatile accessory, suitable for both everyday wear and special occasions.</p>
+                <span class="price">PHP 3,056,000 </span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="images/Lady-Datejust diamond gold.avif" alt="Lady-Datejust">
+                <h3>Lady-Datejust
+                    Oyster, 28 mm, Oystersteel and yellow gold
+                    Reference <mark style="color: rgb(0, 0, 0);"> 279163 </mark>
+                </h3>
+                <p>The Rolex Lady-Datejust in yellow gold is the epitome of timeless elegance and precision, designed for the discerning woman. Its radiant yellow gold case and bracelet exude luxury, while the iconic Datejust design ensures enduring style.</p>
+                <span class="price">PHP 741,000</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+             <!-- Product 8 -->
+             <div class="product-card">
+                <img src="images/Oyster Perpetual 28.avif" alt="Perpetual">
+                <h3>Oyster Perpetual 28
+                    Oyster, 28 mm, Oystersteel
+                    Reference <mark style="color: rgb(0, 0, 0);"> 276200 </mark>
+                </h3>
+                <p>The Rolex Oyster Perpetual 28 is a classic and elegant timepiece, known for its simplicity and timeless design. As a direct descendant of the original Oyster launched in 1926, it embodies Rolex's foundational principles of chronometric precision, waterproofness, and self-winding functionality.</p>
+                <span class="price">PHP 364,500</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+            
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="images/Oystersteel dayjust 41.avif" alt="Oystersteel">
+                <h3>Oyster Perpetual 31
+                    Oyster, 31 mm, Oystersteel
+                    Reference <mark style="color: rgb(0, 0, 0);"> 277200 </mark>
+                </h3>
+                <p>The Rolex Oyster Perpetual 31 is a classic and elegant timepiece celebrated for its understated design, exceptional precision, and unwavering reliability. As a direct descendant of the original Rolex Oyster, the world's first waterproof wristwatch, it embodies the core attributes of the Oyster Perpetual collection: chronometric precision certified by COSC, a robust and waterproof Oyster case, and the convenience of self-winding via a Perpetual rotor.</p>
+                <span class="price">PHP 371,000</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+             <!-- Product 10 -->
+             <div class="product-card">
+                <img src="images/audemars-piguet-5.jpg" alt="audemars-piguet">
+                <h3>Audemars Piguet Black tapisserie
+                   Black leather strap , 33 mm, rose gold
+                    Reference <mark style="color: rgb(0, 0, 0);">67650OR</mark>
+                </h3>
+                <p>The Audemars Piguet Royal Oak features a stunning rose gold case and a sophisticated black tapisserie dial. Its automatic movement ensures precision, while the leather strap adds a touch of classic elegance. This iconic timepiece embodies sporty luxury and refined craftsmanship.</p>
+                <span class="price">PHP 4,565,000</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card">
+                <img src="images/cartier-ballon-bleu-28-white-gold-diamond-ladies-watch-6.jpg" alt="cartier-ballon-bleu">
+                <h3>Cartier Ballon Bleu 
+                   Silver , 33 mm, Steel Black
+                    Reference <mark style="color: rgb(0, 0, 0);">WJBB0056</mark>
+                </h3>
+                <p>The Cartier Ballon Bleu is an elegant women's watch featuring a round steel case adorned with brilliant-cut diamonds. Its silver dial showcases classic Roman numeral hour markers and distinctive blue sword-shaped hands. Finished with a black leather strap and the signature blue cabochon on the crown, this timepiece exudes timeless sophistication.</p>
+                <span class="price">PHP 1,375,000</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="images/franck-muller-chronometro-7502-s6-d-18k-white-gold-diamond-7.jpg" alt="ranck-muller-chronometro">
+                <h3>Franck Muller Cintrée Curvex 
+                    Silver , 31 mm, White Gold
+                    Reference <mark style="color: rgb(0, 0, 0);">114200Q</mark>
+                </h3>
+                <p>The Franck Muller Cintrée Curvex showcases a distinctive curved case adorned with diamonds, creating a sophisticated and elegant aesthetic. Its silver dial features stylized numerals and blue hands, adding a touch of whimsy and charm. Paired with a black leather strap, this timepiece is a statement of refined luxury.</p>
+                <span class="price">PHP 1,650,000</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card">
+                <img src="images/jaeger-lecoultre-reverso 4.jpg" alt="jaeger-lecoultre">
+                <h3>Jaeger-LeCoultre Reverso Alligator leather strap
+                    , 28 mm, Blue
+                    Reference <mark style="color: rgb(0, 0, 0);">Q2608540</mark>
+                </h3>
+                <p>The Jaeger-LeCoultre Reverso watch boasts a unique reversible case, showcasing a stunning blue dial paired with a sophisticated alligator leather strap. Enhanced by the sparkle of diamonds along the case, this timepiece exemplifies elegance and precision. Its enduring design and luxurious features make it a prized possession for discerning collectors.</p>
+                <span class="price">PHP 1,120,000</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card">
+                <img src="images/omega-de-ville-vintage-diamond-ladies-watch-6.jpg" alt="omega-de-ville-vintage">
+                <h3>Omega De Ville Silver Dial
+                    Oyster, 27 mm, light gold dial
+                    Reference <mark style="color: rgb(0, 0, 0);">1262H33</mark>
+                </h3>
+                <p>The Omega De Ville Prestige is an elegant ladies' watch, showcasing a petite square case adorned with diamonds and a champagne-colored dial. Its unique wavy metal bracelet adds a touch of sophistication, making it a stylish accessory for any occasion. This luxurious timepiece combines classic design with the renowned precision of Omega.</p>
+                <span class="price">PHP 604,010</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-card">
+                <img src="images/patek-philippe-calatrava- 3.jpg" alt="patek-philippe-calatrava">
+                <h3>Patek Philippe Complications Annual Calendar Regulator brown Dial
+                    Oyster, 39 mm, Alligator leather strap
+                    Reference <mark style="color: rgb(0, 0, 0);">5235R-001</mark>
+                </h3>
+                <p>The Patek Philippe Complications Annual Calendar Regulator features a sophisticated regulator-style dial with separate displays for hours, minutes, and seconds, encased in luxurious rose gold. The diamond-set bezel adds a touch of elegance to the rich brown dial and matching alligator leather strap. This exquisite timepiece showcases Patek Philippe's commitment to horological excellence and timeless design.</p>
+                <span class="price">PHP 6,700,000</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product-card">
+                <img src="images/patek-philippe-gondolo-rose-gold-diamond-ladies-watch-8.jpg" alt="patek-philippe-gondolo">
+                <h3>Patek Philippe Gondolo  silver-white Dial
+                    Oyster, 35 mm, White Gold and Diamonds
+                    Reference <mark style="color: rgb(0, 0, 0);">7090R-001</mark>
+                </h3>
+                <p>The Patek Philippe Gondolo presents a beautifully curved, cushion-shaped rose gold case, complemented by a silvered dial with elegant Roman numeral markers. A diamond-set bezel enhances its luxurious appeal, while the black alligator leather strap adds a touch of classic sophistication. This exquisite timepiece embodies Patek Philippe's dedication to timeless elegance and exceptional craftsmanship.</p>
+                <span class="price">PHP 4,500,000</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+
+            <!-- Product 17 -->
+            <div class="product-card">
+                <img src="images/breitling-cockpit-steel-17.jpg" alt="breitling-cockpit">
+                <h3>Breitling cockpit Silver band,
+                    49 mm, brown dial and gold accents.
+                    Reference <mark style="color: rgb(0, 0, 0);">K25362</mark>
+                </h3>
+                <p>This is a Breitling watch featuring a stainless steel bracelet and a brown dial with diamond accents. The watch has gold-tone Roman numeral hour markers and hands, and a date window at the 3 o'clock position. It is a chronometer-certified timepiece water-resistant to 100m/330ft.</p>
+                <span class="price">PHP 1,096,402</span>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Regal Timepiece. All rights reserved.</p>
+        <p>Email: info@regaltimepiece.com | Phone: +63 998 546 123</p>
+        <p>Follow us on <a href="#" style="color: #e67e22;">Instagram</a> and <a href="#" style="color: #e67e22;">Facebook</a></p>
